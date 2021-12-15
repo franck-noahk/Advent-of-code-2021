@@ -17,17 +17,14 @@ namespace Day_02
                 {
                     i += 8;
                     ToOpperate.forward((int)char.GetNumericValue(charInput[i]));
-                    Console.WriteLine("position +" +charInput[i]);
                 }
                 else if (charInput[i] == 'u')
                 { 
                     i += 3;
                     ToOpperate.up((int) char.GetNumericValue(charInput[i]));
-                    Console.WriteLine("Depth - " + charInput[i]);
                 } else if( charInput[i] == 'd'){
                     i += 5;
                     ToOpperate.down((int)char.GetNumericValue( charInput[i]));
-                    Console.WriteLine("Depth + " + charInput[i]);
                 }
                 
             }

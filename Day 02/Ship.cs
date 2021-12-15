@@ -7,6 +7,7 @@ namespace Day_02
     {
         public int Position { get; set; }
         public int depth { get; set; }
+        public int aim { get; set; }
 
         public Ship(int StartingPosition = 0, int StartingDepth = 0)
         {
@@ -16,21 +17,19 @@ namespace Day_02
 
         public void forward(int numberToMove){
             Position += numberToMove;
-            Console.WriteLine(this.ToString());
+            depth += numberToMove * aim;
         }
 
         public void up(int numberToMove){
-            depth -= numberToMove;
-            Console.WriteLine(this.ToString());
+            aim -= numberToMove;
         }
 
         public void down(int numberToMove){
-            depth += numberToMove;
-            Console.WriteLine(this.ToString());
+            aim += numberToMove;
         }
 
         public int getEndResult(){
-            Console.WriteLine(this.GetType());
+            Console.WriteLine($"Position: {Position}\tDepth:{depth}\tAim: {aim}");
             return Position * depth;
         }
         override
