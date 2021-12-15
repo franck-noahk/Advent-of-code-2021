@@ -6,7 +6,10 @@ namespace Day_01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] toTest = { 199, 200, 208, 210, 200, 207, 240, 269, 260, 263 };
+
+            int toPrint = Increase.GetCountIncreases(toTest);
+            Console.WriteLine(toPrint);
         }
     }
 }
