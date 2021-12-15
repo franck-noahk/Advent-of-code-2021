@@ -1,3 +1,5 @@
+using System;
+
 namespace Day_01
 {
     public static class Increase
@@ -27,10 +29,11 @@ namespace Day_01
             int previousSum = int.MaxValue;
             for (int i = 0; i < arr.Length; i++)
             {
+              
                 sum = 0;
-                for (int j = 0; j < spacingSize - 1; j++)
+                for (int j = 0; j < spacingSize; j++)
                 {
-                    if (!(i + j >= arr.Length))
+                   if (!(i + j >= arr.Length))
                     {
                         sum += arr[i+j];
                     }
