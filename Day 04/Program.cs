@@ -6,7 +6,18 @@ namespace Day_04
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProcessInputs GetData = new ProcessInputs();
+            GetData.ReadFiles();
+
+            foreach (String line in GetData.TestData)
+            {
+                Console.WriteLine (line);
+            }
+
+            //look at number called
+            //identify locations on boards
+            //check Win condition
+            //math on end.
         }
     }
 }
